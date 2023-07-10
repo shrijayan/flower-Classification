@@ -17,6 +17,8 @@ train_ds = tf.keras.preprocessing.image_dataset_from_directory(
   image_size=(img_height, img_width),
   batch_size=batch_size)
 
+class_names = train_ds.class_names
+
 @st.cache(allow_output_mutation=True)
 def load_model():
   model=tf.keras.models.load_model('my_model2.hdf5')
