@@ -1,3 +1,4 @@
 tensorflow
 opencv-python
-libgl1
+opencv-python-headless
+opencv_contrib_python
